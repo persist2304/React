@@ -1,0 +1,24 @@
+{
+  "name": "reacttodolist",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/persist2304/ReactToDoList.git"
+  },
+  "author": "IvanSu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/persist2304/ReactToDoList/issues"
+  },
+  "homepage": "https://github.com/persist2304/ReactToDoList#readme",
+  "dependencies": {
+    "jsx-loader": "^0.13.2",
+    "react": "^16.13.1",
+    "webpack-cli": "^3.3.11"
+  }
+}
