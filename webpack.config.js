@@ -1,11 +1,23 @@
-const path = require('path'); //使用 path 方法
-
+const path = require('path');
 module.exports = {
-    entry: {
-        index: './index.js' //打包的檔案
-    },
+    entry: ['./index.js', './app.jsx'],
     output: {
-        filename: 'bundle.js', //輸出的名稱
-        path: path.resolve('./'), //輸出的路徑
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, './'),
     },
+    module: {
+        rules: [
+            //第一個loader編譯JSX
+            { test: /.jsx$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-react'] } } },
+            //第二個loader編譯ES6
+            { test: /.js$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-env'] } } },
+            //編譯JSX的loader，將@babel/preset-env加進preset中
+            { test: /.jsx$/, exclude: /node_modules/, use: { loader: 'babel-loader', options: { presets: ['@babel/preset-react','@babel/preset-env'] } } }
+        ]
+    },
+    //增加一個給 devserver 的設定
+    devServer: {
+        //指定開啟 port 為 9000
+        port: 9000
+    }
 };
