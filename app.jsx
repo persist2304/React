@@ -1,58 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class HelloTitle extends React.Component{
-
-    componentDidUpdate(){
-        console.log(`這次是${this.props.title}`)
-    }
-
-    render(){
-
-        let titleName = this.props.title == '先生'?
-            <h1>{this.props.title}!你好</h1>:
-            null
-
-
-        return <div>{titleName}</div>
-    }
-}
-
-class InputGender extends React.Component{
+class TodoList extends React.Component{
     constructor(props){
         super(props)
-        this.state = ({gender: 'M'})
-        this.changeGender = this.changeGender.bind(this)
     }
-
-    changeGender(){
-        console.log(event.target)
-
-        this.setState({gender: event.target.value})
-    }
-
-    componentDidUpdate(){
-        console.log(`state目前狀態是：${this.state.gender}`)
-    }
-
     render(){
-
-        let title;
-        this.state.gender == 'M'?
-            title = <HelloTitle title="先生"/>:
-            title = <HelloTitle title="小姐"/>
+        let lists = this.props.objLists.map(list =>{
+            return <li key={list.id}>{list.list}</li>
+        })
 
         return (
-            <div>
-                {title}
-                <select onChange={this.changeGender.bind(this)}>
-                    <option value="M">male</option>
-                    <option value="W">Female</option>
-                </select>
-            </div>
-
+            <ul>
+                {lists}
+            </ul>
         )
     }
 }
-ReactDOM.render(<InputGender/>,document.getElementById('root'));
+
+let objLists = [
+    {id:'a',list:'打文章'},
+    {id:'b',list:'寫程式'},
+    {id:'c',list:'耍廢'}
+]
+
+ReactDOM.render(<TodoList objLists={objLists}/>,document.getElementById('root'));
 
