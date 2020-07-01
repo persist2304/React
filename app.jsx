@@ -1,31 +1,31 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class AddButton extends React.Component{
+class InputGender extends React.Component{
     constructor(props){
         super(props)
-        this.state = ({clickCount: 0})
-        this.addCount = this.addCount.bind(this)
+        this.state = ({gender: ''})
+        this.changeGender = this.changeGender.bind(this)
     }
 
-    addCount(count){
-        console.log(`每次增加:${count}`)
-        this.setState({clickCount: this.state.clickCount+count},()=>{console.log(`點惹:${this.state.clickCount}下`)})
-        console.log(`點惹:${this.state.clickCount}下`)
+    changeGender(strA){
+        console.log(event.target)
 
+        this.setState({gender: event.target.value})
     }
 
     componentDidUpdate(){
-        console.log(`Update點惹:${this.state.clickCount}下`)
+        console.log(`state目前狀態是：${this.state.gender}`)
     }
 
     render(){
-        return <input type="button"
-                      onClick={this.addCount.bind(this,1)}
-                      value="click me"/>
+        return (
+        <select onChange={this.changeGender.bind(this)}>
+            <option value="M">male</option>
+            <option value="W">Female</option>
+        </select>
+        )
     }
 }
-ReactDOM.render(<AddButton/>,document.getElementById('root'));
-
-
+ReactDOM.render(<InputGender/>,document.getElementById('root'));
 
