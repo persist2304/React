@@ -5,64 +5,31 @@ class EasyForm extends React.Component{
 
     constructor(props){
         super(props)
-        this.state = {
-            lists: [
-                {id: '01',listName: '吃飯',check: false},
-                {id: '02',listName: '睡覺',check: false},
-                {id: '03',listName: '打東東',check: true}
-            ]
-        }
-        this._changeState = this._changeState.bind(this)
         this._submitForm = this._submitForm.bind(this)
+        this._filebox = React.createRef()
     }
-
-    _changeState(index){
-        let arrList = this.state.lists
-        arrList[index].check == true?
-            arrList[index].check = false:
-            arrList[index].check = true
-        this.setState({lists: arrList})
-    }
-
     _submitForm(){
-        let status = `目前做了`
-        this.state.lists.map(list =>
-            list.check?
-                status += `${list.listName}`:
-                ``
-        )
-        console.log(status);
+        console.log(`選擇檔案為:${this._filebox.current.files[0].name}`)
         event.preventDefault()
     }
 
     render(){
-        let lists = this.state.lists.map((list,index) =>
-            <div key={list.id}>
-                <input type="checkbox"
-                       checked={list.check}
-                       onChange={this._changeState.bind(this,index)}
-                       key={list.id}
-                />
-                <label>{list.listName}</label>
-            </div>
+        const uploadFileTitle = (
+            <h1>上傳檔案：</h1>
         )
-        const checkBox = (
-            <div>
-                <label>daily list:</label>
-                {lists}
+        const submit = (
+            <input type="submit" value="submitForm"/>
+        )
+        const uploadFile = (
+            <input type="file" ref={this._filebox}/>
+        )
+        return (
+            <form onSubmit={this._submitForm}>
+                {uploadFileTitle}
+                {uploadFile}
                 <br/>
-            </div>
-        )
-        const easyForm = (
-                <form onSubmit={this._submitForm}>
-                    <input type="submit" value="submit"/>
-                </form>
-        )
-        return(
-            <div>
-                {checkBox}
-                {easyForm}
-            </div>
+                {submit}
+            </form>
         )
     }
 }
