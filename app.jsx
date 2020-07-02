@@ -6,81 +6,61 @@ class EasyForm extends React.Component{
     constructor(props){
         super(props)
         this.state = {
-            name: ``,
-            gender: `M`,
-            introduction:``,
-
+            lists: [
+                {id: '01',listName: '吃飯',check: false},
+                {id: '02',listName: '睡覺',check: false},
+                {id: '03',listName: '打東東',check: true}
+            ]
         }
         this._changeState = this._changeState.bind(this)
         this._submitForm = this._submitForm.bind(this)
     }
 
-    _changeState(){
-        let changeName = event.target.name
-        this.setState({[changeName]: event.target.value})
+    _changeState(index){
+        let arrList = this.state.lists
+        arrList[index].check == true?
+            arrList[index].check = false:
+            arrList[index].check = true
+        this.setState({lists: arrList})
     }
 
     _submitForm(){
-        console.log(`現在name是${this.state.name}`)
-        console.log(`現在gender是${this.state.gender}`)
-        console.log(`現在introduction是${this.state.introduction}`)
+        let status = `目前做了`
+        this.state.lists.map(list =>
+            list.check?
+                status += `${list.listName}`:
+                ``
+        )
+        console.log(status);
         event.preventDefault()
     }
 
     render(){
-        const name = (
-            <div>
-                <label>Name:</label>
-                <input type="text"
-                       id="name"
-                       name="name"
-                       onChange={this._changeState}
-                       value={this.state.name}
+        let lists = this.state.lists.map((list,index) =>
+            <div key={list.id}>
+                <input type="checkbox"
+                       checked={list.check}
+                       onChange={this._changeState.bind(this,index)}
+                       key={list.id}
                 />
+                <label>{list.listName}</label>
             </div>
         )
-
-        const gender = (
+        const checkBox = (
             <div>
-                <label>gender:</label>
-                <select name="gender"
-                        id="gender"
-                        onChange={this._changeState}
-                        value={this.state.gender}
-                >
-                        <option value="M">male</option>
-                        <option value="W">female</option>
-                </select>
-            </div>
-        )
-
-        const textarea = (
-            <div>
-                <label>introduction:</label>
+                <label>daily list:</label>
+                {lists}
                 <br/>
-                <textarea name="introduction"
-                          id="introduction"
-                          cols="30"
-                          rows="10"
-                          onChange={this._changeState}
-                          value={this.state.introduction}
-                >
-                </textarea>
             </div>
         )
-
         const easyForm = (
                 <form onSubmit={this._submitForm}>
-                    {name}
-                    {gender}
-                    {textarea}
-                    <input type="submit"
-                           value="submit"
-                    />
+                    <input type="submit" value="submit"/>
                 </form>
         )
         return(
             <div>
+                {checkBox}
                 {easyForm}
             </div>
         )
