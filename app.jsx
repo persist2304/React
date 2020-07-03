@@ -1,75 +1,86 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//判斷溫度是否達沸點
-class Title extends React.Component {
+//訊息資料
+let data = [{id:'1',name:'神Q',message:'嗨！大家好啊！'},
+    {id:'2',name:'小馬',message:'早安啊！昨天有沒有好好發文？'},
+    {id:'3',name:'王子',message:'ㄛ！別說了，那真的超級累！'},
+    {id:'4',name:'神Q',message:'哈哈哈！加油啦！再一下就結束了！'},
+    {id:'5',name:'王子',message:'結束後我一定要爆睡一頓！'},]
+
+class Message extends React.Component{
     render(){
-        //溫度100度以上就到達沸點
-        return <h1>{(this.props.temperature>=100 ? '達到沸點!!!':'未到沸點...')}</h1>
+        let divStyle = {marginBottom: 20}
+        let messageStyle = {marginLeft: 20}
+        return(
+            <div style={divStyle}>
+                <div>
+                    {`${this.props.name}對大家說：`}
+                </div>
+                <div style={messageStyle}>
+                    {this.props.message}
+                </div>
+            </div>
+        )
     }
 }
 
-class InputTemperature extends React.Component{
+class MessageBlock extends React.Component{
     render(){
+        let message = this.props.messageData.map(item =>
+            item.name.indexOf(this.props.searchName)!=-1 ||
+            item.message.indexOf(this.props.searchName)!=-1 ?
+            <Message key={item.key}
+                     name={item.name}
+                     message={item.message}
+            />:null)
         return (
             <div>
-                <span>目前輸入溫度是：{this.props.temperature}度{this.props.type}</span>
-                <input type="text"
-                       name="temperature"
-                       value={this.props.temperature}
-                       onChange={this.props.changeState}
-                />度{this.props.type}
+                {message}
             </div>
         )
     }
 }
 
-class EasyForm extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = ({
-            temperature : 0,
-            type: ``,
-        })
-        this.changeState = this.changeState.bind(this)
-    }
-
-    toConvert(temperature,type){
-        return type == 'C'?
-            (temperature - 32) * 5 / 9:
-            (temperature * 9 / 5) + 32
-    }
-
-    changeState(type){
-        let temperature = window.event.target.value
-        this.setState({
-            [event.target.name]: temperature,
-            type: type
-        })
-    }
-
-    render() {
-        let temperature_C = this.state.type == "F"?
-            this.toConvert(this.state.temperature,'C'):
-            this.state.temperature
-        let temperature_F = this.state.type == "C"?
-            this.toConvert(this.state.temperature,'F'):
-            this.state.temperature
+class SearchBlock extends React.Component{
+    render(){
         return(
             <div>
-                <Title temperature={temperature_C} />
-                <InputTemperature type="C"
-                                  temperature={temperature_C}
-                                  changeState={this.changeState.bind(this,'C')}
-                />
-                <InputTemperature type="F"
-                                  temperature={temperature_F}
-                                  changeState={this.changeState.bind(this,'F')}
+                <span>searchPeople:</span>
+                <input type="text"
+                       value={this.props.searchName}
+                       onChange={this.props._changeState}
                 />
             </div>
         )
     }
 }
 
-ReactDOM.render(<EasyForm/>, document.getElementById('root'))
-
+class MessageForm extends React.Component{
+    constructor(props){
+        super(props)
+        this.state = {
+            name: ``,
+        }
+        this._changeState = this._changeState.bind(this)
+    }
+    _changeState(){
+        this.setState({
+            name: event.target.value
+        })
+    }
+    render(){
+        return(
+            <div>
+                <SearchBlock searchName={this.state.name}
+                             _changeState={this._changeState}
+                />
+                <hr/>
+                <MessageBlock messageData={this.props.messageData}
+                              searchName={this.state.name}
+                />
+            </div>
+        )
+    }
+}
+ReactDOM.render(<MessageForm messageData={data} />,document.getElementById('root'))
