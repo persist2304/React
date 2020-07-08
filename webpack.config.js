@@ -1,6 +1,6 @@
 const path = require('path');
 module.exports = {
-    entry: ['./index.js', './app.jsx'],
+    entry: ['./index.js', './app.jsx', './message.jsx'],
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, './'),
