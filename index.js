@@ -13,19 +13,19 @@ const data = {
 
 const addMessage = article => ({
     type: 'addMessage',
-    payload: article
+    payload: article,
 })
 
 const rootReducer = (state = data, action) => {
     switch(action.type){
         case 'addMessage':
-            break;
+            action.payload.key = String(state.message.length+1)
+            return {...state, message: [...state.message, action.payload]}
         default:
             return state
     }
 }
 
 const store = createStore(rootReducer)
-console.log(data)
 
-export default store
+export {store, addMessage}
