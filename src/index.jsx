@@ -1,5 +1,6 @@
 import React from 'react'
 import {Main} from './components/Main'
 import ReactDOM from 'react-dom'
+import {InputTask} from './components/InputTask'
 
-ReactDOM.render(<Main/>,document.getElementById('root'))
+ReactDOM.render(<InputTask/>,document.getElementById('root'))
