@@ -1,0 +1,26 @@
+/*先把整個頁面的邊距取消掉，然後背景色為灰色*/
+body{
+    margin: 0px;
+    background: #E1E1E1;
+}
+/*設定背景顏色、高度和對齊方式，上方的區塊和下方的內容會有一點距離，所以開外邊界推開*/
+#topBlock{
+    background: #4A90E2;
+    height: 75px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+.bookMark{
+    background: #4A90E2;
+    color: #00408B;
+    font-size: 24px;
+    height: 75px;
+    width: 220px;
+    border: none;
+}
+.select_bookMark{
+    color: #ffffff;
+    height: 70px;
+
+    border-bottom: solid 5px #00408B;
+}
