@@ -32,6 +32,7 @@ body{
     text-align: center;
 }
 
+/*整體置中設定寬度*/
 .inputTasksForm{
     width: 620px;
     margin: 0 auto;
@@ -85,7 +86,7 @@ body{
 
 .inputStyle{
     border:none;
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .inputDateTime{
@@ -109,4 +110,12 @@ body{
 .cancelButton{
     background: #fffffd;
     color: #D0021B;
+}
+#addTask{
+    width: 620px;
+    height: 65px;
+    font-size: 24px;
+    color: #C8C8C8;
+    border: 2px solid #C8C8C8;
+    border-radius: 5px;
 }
