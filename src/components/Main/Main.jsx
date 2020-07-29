@@ -12,8 +12,7 @@ class Main extends React.Component{
             <Provider store={todoListStore}>
                 <HashRouter>
                     <TopBlock/>
-                    <Route exact path='/'
-                           component={MyTasks} />
+                    <Route exact path='/' component={MyTasks} />
                 </HashRouter>
             </Provider>
         )

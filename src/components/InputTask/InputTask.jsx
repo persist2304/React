@@ -26,7 +26,6 @@ class ConnectInputTask extends React.Component {
         this.setState({
             [event.target.name]: value
         })
-
     }
     _tagImportant(){
         if (this.state.important == ''){
