@@ -6,11 +6,16 @@ import {connect} from 'react-redux'
 class ConnectInputTask extends React.Component {
     constructor(props){
         super(props)
-        this.state = {
-            id: '', name: '', date: '',
-            time: '', file: '', commit: '',
-            important: '', complete: false
+
+        if (this.props.listData)
+            this.state = this.props.listData
+        else
+            this.state = {
+                id: "",name: "",date: "",
+                time: "",file: "",commit: "",
+                important: "",complete: false
         }
+
         this.filebox = React.createRef()
         this._changeState = this._changeState.bind(this)
         this._tagImportant = this._tagImportant.bind(this)

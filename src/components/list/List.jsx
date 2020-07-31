@@ -1,16 +1,20 @@
 import React from 'react'
+import { InputTask } from "../InputTask"
 
 class List extends React.Component{
     constructor(props){
         super(props)
         this.state = {
             important: this.props.listData.important,
-            complete: this.props.listData.complete
+            complete: this.props.listData.complete,
+            editTasks: null
         }
         this._changeState = this._changeState.bind(this)
+        this._openEdit = this._openEdit.bind(this)
+        this._closeEdit = this._closeEdit.bind(this)
+        this._list = React.createRef()
     }
-
-
+    
     _changeState(type){
         switch(type){
             case "complete": {
@@ -27,11 +31,26 @@ class List extends React.Component{
         }
     }
 
+    _openEdit(){
+        if(event.target.className.indexOf('fa-star') === -1 && event.target.className.indexOf("taskChk") === -1) {
+            this._list.current.style.display = "none"
+            this.setState({
+                editTasks: (<InputTask listData={this.props.listData} closeAdd={this._closeEdit}/>)
+            })
+        }
+    }
+
+    _closeEdit(){
+        this._list.current.style.display = ""
+        this.setState({
+            editTasks: null
+        })
+    }
     render(){
         return (
             <div className="listBlock">
 
-                <div className={" list " + (this.state.important == "Y" ? " important": "  " )}>
+                <div className={" list " + (this.state.important == "Y" ? " important": "  " )} onClick={this._openEdit} ref={this._list}>
                     <input type="checkbox" className="taskChk" checked={this.state.complete}
                            onChange={this._changeState.bind(this,'complete')}/>
 
@@ -39,7 +58,7 @@ class List extends React.Component{
                             (this.state.important == "Y" ?" important": " ") +
                             (this.state.complete ? " complete": " ")}
                            value={this.props.listData.name}/>
-                    
+
                     <i className={this.state.important == "Y" ?
                         "fas fa-star fa-lg icon iconImportant":
                         "far fa-star fa-lg icon"}
@@ -59,7 +78,9 @@ class List extends React.Component{
 
                     </div>
                 </div>
-
+                <div>
+                    {this.state.editTasks}
+                </div>
             </div>
         )
     }
