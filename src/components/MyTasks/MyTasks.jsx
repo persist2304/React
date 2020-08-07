@@ -1,6 +1,6 @@
 import React from 'react'
 import {AddTask} from '../AddTask'
-import { ToDoLists } from "../ToDoLists"
+import { ToDoLists } from "../TodoLists"
 
 class MyTasks extends React.Component{
     render(){
