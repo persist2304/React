@@ -7,12 +7,15 @@ class BookMark extends React.Component{
             <Route exact path={this.props.to}
                    children={props => {
                        let className = 'bookMark '
-                       {props.match?
-                           className += ' select_bookMark':
-                           className = 'bookMark'}
+                       if(this.props.isToDoList){
+                           {props.match?
+                               className += ' select_bookMark':
+                               className = 'bookMark'}
+                       }
                            return (
                                <Link to={this.props.to}>
-                                   <button className={className}>
+                                   <button className={this.props.isToDoList?
+                                       className: this.props.className}>
                                        {this.props.name}
                                    </button>
                                </Link>
