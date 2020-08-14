@@ -1,11 +1,10 @@
 import React from "react"
-import { NavBar } from "../NavBar"
 
 class Home extends React.Component {
     render(){
         return (
             <div>
-                <NavBar/>
+                <img className="HomeBanner" src="https://picsum.photos/2000/300" alt=""/>
             </div>
         )
     }

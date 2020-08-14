@@ -8,6 +8,9 @@ class NavBar extends React.Component{
                 <BookMark to="/ToDoList"
                           name="ToDoList"
                           className="HomeBookMark"/>
+                <BookMark to="/"
+                          name="Home"
+                          className="HomeBookMark"/>
             </div>
         )
     }
