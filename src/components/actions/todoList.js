@@ -1,4 +1,4 @@
-import { ADD_TODOLIST, EDIT_TODOLIST} from '../constants/todoAction-type.js'
+import { ADD_TODOLIST, EDIT_TODOLIST, GET_ARTICLE} from '../constants/todoAction-type.js'
 
 export const addTodoList = todoList => ({
     type: ADD_TODOLIST,
@@ -10,3 +10,7 @@ export const editToDoList = toDoList => ({
     payload: toDoList
 })
 
+export const GetArticle = ArticleList => ({
+    type: GET_ARTICLE,
+    payload: ArticleList
+})

@@ -1,6 +1,8 @@
 import {createStore} from 'redux'
 import {todoListReducer} from '../reducers'
 
-const todoListStore = createStore(todoListReducer)
+const store = createStore(todoListReducer)
 
-export {todoListStore}
+console.log('store',store)
+
+export {store}

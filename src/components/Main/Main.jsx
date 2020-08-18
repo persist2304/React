@@ -1,7 +1,7 @@
 import React from 'react'
 import {MyTasks} from '../MyTasks'
 import {HashRouter, Route} from 'react-router-dom'
-import {todoListStore} from '../store'
+import {store} from '../store'
 import {addTodoList} from '../actions'
 import {Provider} from 'react-redux'
 import { InProgress } from "../InProgress"
@@ -12,7 +12,7 @@ import { NavBar } from "../NavBar"
 class Main extends React.Component{
     render(){
         return (
-            <Provider store={todoListStore}>
+            <Provider store={store}>
                 <HashRouter>
                     <NavBar/>
                     <Route exact path="/" component={Home}/>
@@ -27,6 +27,6 @@ class Main extends React.Component{
     }
 }
 
-window.store = todoListStore
+window.store = store
 
 export {Main}

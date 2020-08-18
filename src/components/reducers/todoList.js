@@ -1,5 +1,5 @@
-import {todoData} from '../constants/todoLists.js'
-import { ADD_TODOLIST, EDIT_TODOLIST } from '../constants/todoAction-type.js'
+import { todoData, ArticleData } from '../constants/todoLists.js'
+import { ADD_TODOLIST, EDIT_TODOLIST, GET_ARTICLE} from '../constants/todoAction-type.js'
 
 const todoListReducer = (state = todoData, action) => {
     switch(action.type){
@@ -23,4 +23,15 @@ const todoListReducer = (state = todoData, action) => {
     }
 }
 
-export {todoListReducer}
+const ArticleListReducer = (state = ArticleData, action) => {
+    switch(action.type){
+        case GET_ARTICLE: {
+            return [...state, action.payload]
+        }
+        default: {
+            return state
+        }
+    }
+}
+
+export { todoListReducer, ArticleListReducer }
