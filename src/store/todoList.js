@@ -1,5 +1,5 @@
 import {createStore} from 'redux'
-import {todoListReducer} from '../reducers'
+import {todoListReducer} from '../reducers/index'
 
 const store = createStore(todoListReducer)
 

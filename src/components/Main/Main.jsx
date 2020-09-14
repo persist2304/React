@@ -1,8 +1,8 @@
 import React from 'react'
 import {MyTasks} from '../MyTasks'
 import {HashRouter, Route} from 'react-router-dom'
-import {store} from '../store'
-import {addTodoList} from '../actions'
+import {store} from '../../store'
+import {addTodoList} from '../../action'
 import {Provider} from 'react-redux'
 import { InProgress } from "../InProgress"
 import { Completed } from "../Completed"
