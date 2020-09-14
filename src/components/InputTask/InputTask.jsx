@@ -1,6 +1,6 @@
 import React from "react"
 import { InputTasksForm } from "../InputTasksForm"
-import {addTodoList} from '../../action'
+import { addTodoList } from '../../action/todoList'
 import {connect} from 'react-redux'
 
 class ConnectInputTask extends React.Component {
