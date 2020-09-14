@@ -2,8 +2,8 @@ const path = require('path');
 module.exports = {
     entry: ['./src/index.jsx'],
     output: {
-        filename: 'src/bundle.js',
-        path: path.resolve(__dirname, './'),
+        filename: 'bundle.js',
+        path: path.resolve(__dirname, './dist'),
     },
     module: {
         rules: [
@@ -17,6 +17,7 @@ module.exports = {
     },
     //增加一個給 devserver 的設定
     devServer: {
+        contentBase: "./dist",
         //指定開啟 port 為 9000
         port: 9000
     }
