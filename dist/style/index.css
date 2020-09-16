@@ -177,9 +177,11 @@ body{
 .HomeBanner{
     height: 40vh;
     width: 100vw;
+    background: red;
 }
 
 .BannerSize{
     height: 188px;
     width: 272px;
+    float: left;
 }

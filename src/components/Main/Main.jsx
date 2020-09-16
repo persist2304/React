@@ -1,7 +1,7 @@
 import React from 'react'
 import {MyTasks} from '../MyTasks'
 import { Route } from 'react-router-dom'
-import store from '../../store/todoList'
+import store from '../../store/index'
 import { addTodoList } from '../../action/todoList'
 import { InProgress } from "../InProgress"
 import { Completed } from "../Completed"

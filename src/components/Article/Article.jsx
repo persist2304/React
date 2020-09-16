@@ -1,21 +1,26 @@
 import React from "react"
-import { connect } from "react-redux"
+import { useSelector } from "react-redux";
 
-class ConnectArticle extends React.Component{
-    render(){
-        console.log('122',this.props.data)
-        return (
-            <div>
-                Article222
+const _ShowArticle = () => {
+    const data = useSelector(state => state.ArticleReducer)
+    return (
+        data.map((item, index) => (
+            <div key={index}>
+                <li>{item.title}</li>
+                <li>{item.content}</li>
             </div>
-        )
-    }
+        ))
+    )
 }
 
-const mapStateToProps = state => {
-    return { data: state}
+const Article = () => {
+    const data = useSelector(state => state.ArticleReducer)
+    return (
+        <div>
+            <_ShowArticle />
+        </div>
+    )
 }
 
-const Article = connect(mapStateToProps)(ConnectArticle)
+export default Article;
 
-export { Article }

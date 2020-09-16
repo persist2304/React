@@ -7,5 +7,4 @@ export const ArticleData = [
     {id:1,title: "Barcelona", content: "Good morning/afternoon/evening, my name is …… . It is really a great honor to have this opportunity/chance to introduce myself. I would like to answer whatever you may raise, and I hope I can make a good performance today",lists: ["Good", "Sad"]},
     {id:2,title: "Paris", content: "I haven’t done anything like that before"},
     {id:3,title: "Wasgington", content: "I think I’m quite fit for assistant’s job"}
-
 ]
