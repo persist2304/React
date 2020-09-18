@@ -1,16 +1,17 @@
 import React from "react"
 import { BookMark } from "../BookMark"
+import styles from "../../index.scss"
 
 class NavBar extends React.Component{
     render(){
         return (
-            <div id="NavBar">
+            <div id={styles.NavBar}>
                 <BookMark to="/ToDoList"
                           name="ToDoList"
-                          className="HomeBookMark"/>
+                          className={styles.HomeBookMark}/>
                 <BookMark to="/"
                           name="Home"
-                          className="HomeBookMark"/>
+                          className={styles.HomeBookMark}/>
             </div>
         )
     }

@@ -2,130 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="31edd6a0-2586-4965-a90f-b2a6baa3182b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/index.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/style/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/invert-kv/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/invert-kv/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/invert-kv/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/invert-kv/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lcid/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lcid/lcid.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lcid/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lcid/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/lcid/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/map-age-cleaner/dist/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/map-age-cleaner/dist/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/map-age-cleaner/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/map-age-cleaner/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/map-age-cleaner/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mem/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mem/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mem/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mem/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mem/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mimic-fn/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mimic-fn/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mimic-fn/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mimic-fn/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/mimic-fn/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-locale/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-locale/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-locale/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/os-locale/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-defer/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-defer/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-defer/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-defer/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-is-promise/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-is-promise/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-is-promise/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-is-promise/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/node_modules/p-is-promise/readme.md" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Step/Step.jsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/Step/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/bundle.js" afterPath="$PROJECT_DIR$/dist/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-chain.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/config-chain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/configuration.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/configuration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index-browser.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index-browser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/package.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/package.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/plugins.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/utils.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/files/utils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/full.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/full.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/partial.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/partial.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/options.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/plugins.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/config/validation/plugins.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/gensync-utils/fs.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/gensync-utils/fs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/parser/util/missing-plugin-helper.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/tools/build-external-helpers.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/tools/build-external-helpers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-file.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transform-file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/file/merge-map.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/file/merge-map.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-file.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-file.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-opts.js" afterPath="$PROJECT_DIR$/node_modules/@babel/core/lib/transformation/normalize-opts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/core/package.json" afterPath="$PROJECT_DIR$/node_modules/@babel/core/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/@babel/helpers/package.json" afterPath="$PROJECT_DIR$/node_modules/@babel/helpers/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/LICENSE" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/LICENSE" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/README.md" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AliasPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AliasPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AppendPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/AppendPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordExtensionsPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordExtensionsPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordMainPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordMainPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordModulesPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ConcordModulesPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/FileKindPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/FileKindPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModuleAppendPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModuleAppendPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModuleKindPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModuleKindPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/NextPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/NextPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/NodeJsInputFileSystem.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/NodeJsInputFileSystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ParsePlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ParsePlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/Resolver.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/Resolver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ResolverFactory.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ResolverFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ResultPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/ResultPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/TryNextPlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/TryNextPlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/UseFilePlugin.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/UseFilePlugin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/concord.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/concord.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/createInnerCallback.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/createInnerCallback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/createInnerContext.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/createInnerContext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/forEachBail.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/forEachBail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/getInnerRequest.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/getInnerRequest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/getPaths.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/getPaths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/globToRegExp.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/globToRegExp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/node.js" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/lib/node.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/enhanced-resolve/package.json" afterPath="$PROJECT_DIR$/node_modules/enhanced-resolve/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/interpret/README.md" afterPath="$PROJECT_DIR$/node_modules/interpret/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/interpret/index.js" afterPath="$PROJECT_DIR$/node_modules/interpret/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/interpret/package.json" afterPath="$PROJECT_DIR$/node_modules/interpret/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/v8-compile-cache/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/v8-compile-cache/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/v8-compile-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/v8-compile-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/v8-compile-cache/v8-compile-cache.js" afterPath="$PROJECT_DIR$/node_modules/v8-compile-cache/v8-compile-cache.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/README.md" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/lib/interpolateName.js" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/lib/interpolateName.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/package.json" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/node_modules/loader-utils/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/webpack-cli/package.json" afterPath="$PROJECT_DIR$/node_modules/webpack-cli/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/yargs/package.json" afterPath="$PROJECT_DIR$/node_modules/yargs/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/yargs/yargs.js" afterPath="$PROJECT_DIR$/node_modules/yargs/yargs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home/Home.jsx" afterPath="$PROJECT_DIR$/src/components/Home/Home.jsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx" afterPath="$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" afterPath="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.scss" afterPath="$PROJECT_DIR$/src/index.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -138,43 +21,61 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/index.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-                <marker date="1600250759188" expanded="true" signature="263:270" ph="/*...*/" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5769944">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="ImageForm.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="171">
+                  <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                    <marker date="1600332502636" expanded="true" signature="646:717" ph="&lt;div/&gt;" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Home.jsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Step.jsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/components/Step/Step.jsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="475">
+                  <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+                  <folding>
+                    <element signature="e#0#25#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/index.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="590">
+                  <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -187,10 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>&lt;ToDoLists</find>
-      <find>console.log</find>
-      <find>combineReducers</find>
-      <find>ArticleListReducer</find>
       <find>todoListReducertodoListReducer</find>
       <find>reducer</find>
       <find>todoListStore</find>
@@ -214,9 +111,13 @@
       <find>addTodoList</find>
       <find>createContext</find>
       <find>&lt;ImageForm</find>
-      <find>BannerSize</find>
-      <find>HomeBanner</find>
       <find>MiniCssExtracxtPlugin</find>
+      <find>NavBar</find>
+      <find>HomeBanner</find>
+      <find>BannerSize</find>
+      <find>subBanner</find>
+      <find>title</find>
+      <find>subContent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -225,8 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/Completed/index.js" />
-        <option value="$PROJECT_DIR$/src/components/MyTasks/MyTasks.jsx" />
         <option value="$PROJECT_DIR$/src/components/InProgress/InProgress.jsx" />
         <option value="$PROJECT_DIR$/src/components/Completed/Completed.jsx" />
         <option value="$PROJECT_DIR$/src/components/Index/index.js" />
@@ -240,7 +139,6 @@
         <option value="$PROJECT_DIR$/src/components/BookMark/BookMark.jsx" />
         <option value="$PROJECT_DIR$/src/style/bootstrap4.5.2.css" />
         <option value="$PROJECT_DIR$/src/index.html" />
-        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" />
         <option value="$PROJECT_DIR$/src/components/ImageSource/index.js" />
         <option value="$PROJECT_DIR$/src/components/ImageSource/ImageSource.jsx" />
         <option value="$PROJECT_DIR$/src/components/ImageForm/index.js" />
@@ -268,14 +166,17 @@
         <option value="$PROJECT_DIR$/src/components/InputTask/InputTask.jsx" />
         <option value="$PROJECT_DIR$/src/constants/todoLists.js" />
         <option value="$PROJECT_DIR$/src/components/Article/Article.jsx" />
-        <option value="$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx" />
         <option value="$PROJECT_DIR$/dist/index.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/index.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
         <option value="$PROJECT_DIR$/dist/style/index.css" />
+        <option value="$PROJECT_DIR$/src/components/NavBar/NavBar.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Step/index.js" />
+        <option value="$PROJECT_DIR$/src/components/Home/Home.jsx" />
+        <option value="$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Step/Step.jsx" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
       </list>
     </option>
   </component>
@@ -353,6 +254,27 @@
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Home" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ReactToDoList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactToDoList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ImageForm" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactToDoList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactToDoList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ReactToDoList" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ReactToDoList" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Step" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -409,12 +331,12 @@
       <workItem from="1597217055963" duration="10400000" />
       <workItem from="1597628933321" duration="3805000" />
       <workItem from="1597636826179" duration="12491000" />
-      <workItem from="1600226289937" duration="8698000" />
+      <workItem from="1600226289937" duration="25498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261425000" />
+    <option name="totallyTimeSpent" value="278225000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-375" y="-1057" width="1920" height="1032" extended-state="0" />
@@ -451,28 +373,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/InputTasksForm/InputTasksForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/style/ImageForm.styl" />
-    <entry file="file://$PROJECT_DIR$/src/components/MyTasks/MyTasks.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="16" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/react-redux/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="327">
@@ -499,34 +399,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/index.js" />
-    <entry file="file://$PROJECT_DIR$/src/components/Main/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Main/Main.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/action/article.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageForm/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="21" lean-forward="false" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -625,32 +501,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="67" lean-forward="false" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#25#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageSource/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/ImageSource/ImageSource.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -772,25 +622,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="12" lean-forward="false" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-            <marker date="1600250759188" expanded="true" signature="263:270" ph="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/style/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -799,10 +630,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/NavBar/NavBar.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ImageSource/ImageSource.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="47" lean-forward="false" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ImageSource/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="true" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#25#0" expanded="false" />
+            <marker date="1600250759188" expanded="true" signature="263:270" ph="/*...*/" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ImageForm/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="31" lean-forward="true" selection-start-line="0" selection-start-column="31" selection-end-line="0" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="true" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main/Main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Step/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="24" lean-forward="true" selection-start-line="0" selection-start-column="24" selection-end-line="0" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ImageForm/ImageForm.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="50" lean-forward="false" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+            <marker date="1600332502636" expanded="true" signature="646:717" ph="&lt;div/&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="590">
+          <caret line="227" column="0" lean-forward="true" selection-start-line="227" selection-start-column="0" selection-end-line="227" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Home/Home.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="25" lean-forward="true" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Step/Step.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
