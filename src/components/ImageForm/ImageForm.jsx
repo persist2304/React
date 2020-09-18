@@ -1,24 +1,26 @@
 import React from "react"
-import { ImageSource } from "../ImageSource"
-import Article from "../Article"
-import styles from "../../index.scss"
+import styles from "../../style/ImageForm.scss"
 
-class ImageForm extends React.Component{
-    render(){
-        return (
-            <div>
-                <div>
-                    {/*<ContentTitle/>*/}
-                    {/*<ImageSource src="https://picsum.photos/300/400" className={styles.BannerSize}/>*/}
-                    {/*<ImageSource src="https://picsum.photos/300/400" className="BannerSize"/>*/}
-                    {/*<ImageSource src="https://picsum.photos/300/400" className="BannerSize"/>*/}
-                </div>
-                {/*<div>*/}
-                    {/*<Article/>*/}
-                {/*</div>*/}
-            </div>
-        )
-    }
+const ImageData = [
+    { "url": "https://picsum.photos/300/400"}
+]
+
+const Image = (props) => {
+    return (
+        <div>
+            <img src={ props.img } alt="Img" className={ styles.img }/>
+        </div>
+    )
 }
 
-export { ImageForm }
+const ImageForm = () => {
+    return (
+        <div className={ styles.container }>
+            <Image img={ ImageData[0].url }/>
+            <Image img={ ImageData[0].url }/>
+            <Image img={ ImageData[0].url }/>
+        </div>
+    )
+}
+
+export default ImageForm;

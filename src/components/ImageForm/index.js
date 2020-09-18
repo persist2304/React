@@ -1,1 +1,3 @@
-export * from "./ImageForm.jsx"
+import ImageForm from "./ImageForm.jsx"
+
+export default ImageForm;

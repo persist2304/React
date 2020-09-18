@@ -28,6 +28,7 @@ const Step = () => {
         <div className={styles.bg}>
             <div className={styles.subContent}>
                 <div>{ title }</div>
+                <div className={styles.flex}>
                 <ContentStep img={step[0].img}
                              title={step[0].title}
                              content={step[0].content}/>
@@ -37,6 +38,7 @@ const Step = () => {
                 <ContentStep img={step[2].img}
                              title={step[2].title}
                              content={step[2].content}/>
+                </div>
             </div>
         </div>
     )
