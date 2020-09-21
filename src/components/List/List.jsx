@@ -2,6 +2,7 @@ import React from 'react'
 import { InputTask } from "../InputTask"
 import { editToDoList } from "../../action/todoList"
 import { connect } from "react-redux"
+import styles from "../../index.scss"
 
 class ConnectList extends React.Component{
     constructor(props){
@@ -60,27 +61,26 @@ class ConnectList extends React.Component{
     }
     render(){
         return (
-            <div className="listBlock">
-
-                <div className={" list " + (this.state.important == "Y" ? " important": "  " )} onClick={this._openEdit} ref={this._list}>
-                    <input type="checkbox" className="taskChk" checked={this.state.complete}
+            <div className={ styles.listBlock }>
+                <div className={ styles.list + (this.state.important == "Y" ? " " + styles.important : "  " )} onClick={this._openEdit} ref={this._list}>
+                    <input type="checkbox" className={ styles.taskChk } checked={this.state.complete}
                            onChange={this._changeState.bind(this,'complete')}/>
 
-                    <input type="text" className={ "taskTitle" +
-                            (this.state.important == "Y" ?" important": " ") +
+                    <input type="text" className={ styles.taskTitle +
+                            (this.state.important == "Y" ? " " + styles.important : " ") +
                             (this.state.complete ? " complete": " ")}
                            value={this.props.listData.name}/>
 
-                    <i className={this.state.important == "Y" ?
-                        "fas fa-star fa-lg icon iconImportant":
-                        "far fa-star fa-lg icon"}
+                    <i className={ styles + this.state.important == "Y" ?
+                        "fas fa-star fa-lg" + styles.icon + " " + styles.iconImportant:
+                        "far fa-star fa-lg" + styles.icon }
                        onClick={this._changeState.bind(this,"important")}></i>
 
-                    <i className="fas fa-pen fa-lg icon"></i>
-
-                    <div className="listIcon">
+                    {/*<i className="fas fa-pen fa-lg icon"></i>*/}
+                    <i className={"fas fa-pen fa-lg" + styles.icon} ></i>
+                    <div className={ styles.listIcon }>
                         {this.props.listData.date != ''?
-                            <i className="fa fa-calendar-alt icon"></i>: " "}
+                            <i className={"fa fa-calendar-alt" + " " + styles.icon }></i>: " "}
                         {this.props.listData.date != ""? ` ${this.props.listData.date.substring(5).replace(/-/gi,'/')}` : ""}
 
                         {this.props.listData.file != ""?

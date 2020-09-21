@@ -2,6 +2,7 @@ import React from "react"
 import { InputTasksForm } from "../InputTasksForm"
 import { addTodoList } from '../../action/todoList'
 import {connect} from 'react-redux'
+import styles from "../../index.scss"
 
 class ConnectInputTask extends React.Component {
     constructor(props){
@@ -80,7 +81,7 @@ class ConnectInputTask extends React.Component {
                     'important inputTaskTitle':
                     ' inputTaskTitle'}>
                         <input name='complete' type="checkbox"
-                               className="taskChk" checked={this.state.complete}
+                               className={ styles.taskChk } checked={this.state.complete}
                                onChange={this._changeState} />
                         <input name='name' type="text"
                                className={(this.state.important == 'Y'?'important taskTitle': 'taskTitle') + (this.state.complete ? ' complete': '')}

@@ -1,10 +1,11 @@
 import React from 'react'
 import {BookMark} from '../BookMark'
+import styles from "../../index.scss"
 
 class TopBlock extends React.Component{
     render(){
         return (
-            <div id="topBlock">
+            <div id={ styles.topBlock }>
                 <BookMark to='/ToDoList'
                           name='My Tasks'
                           isToDoList={true}/>

@@ -1,6 +1,7 @@
 import React from "react"
 import { connect } from "react-redux"
 import { List } from "../List"
+import styles from "../../index.scss"
 
 class ConnectTodoLists extends React.Component {
     render() {
@@ -44,7 +45,7 @@ class ConnectTodoLists extends React.Component {
                 <div>
                     {Lists}
                 </div>
-                <div class="countText">
+                <div className={ styles.countText }>
                     <span>{todoCount} tasks {this.props.page === "completed" ? "completed" : "left"}</span>
                 </div>
             </div>
@@ -53,7 +54,7 @@ class ConnectTodoLists extends React.Component {
 }
 
 const mapStateToProps = state => {
-    return { data: state }
+    return { data: state.todoListReducer }
 }
 
 const ToDoLists = connect(mapStateToProps)(ConnectTodoLists)
