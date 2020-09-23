@@ -1,29 +1,19 @@
 import React from 'react'
-import {MyTasks} from '../MyTasks'
-import { Route } from 'react-router-dom'
-import store from '../../store/index'
-import { addTodoList } from '../../action/todoList'
-import { InProgress } from "../InProgress"
-import { Completed } from "../Completed"
-import { Home } from "../Home"
 import { NavBar } from "../NavBar"
+import store from '../../store/index'
+import ToDo from "../ToDo"
 
 class Main extends React.Component{
     render(){
         return (
             <div>
                 <NavBar/>
-                    <Route exact path="/" component={Home}/>
-                <div className="alignCenter">
-                    <Route exact path="/ToDoList" component={MyTasks} />
-                    <Route exact path="/inProgress" component={InProgress} />
-                    <Route exact path="/completed" component={Completed} />
-                </div>
+                <ToDo/>
             </div>
         )
     }
 }
 
-window.store = store
+window.store = store;
 
 export {Main}

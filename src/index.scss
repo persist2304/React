@@ -5,15 +5,15 @@ body{
 
 //ToDoList Css
 
-#test {
-  color: red;
-}
-
 #topBlock{
   background: #4A90E2;
   height: 75px;
   text-align: center;
   margin-bottom: 24px;
+}
+
+.paddingTop {
+  padding-top: 35px;
 }
 
 .bookMark{
@@ -171,7 +171,12 @@ body{
   background: rgb(45,68,85);
   height: 35px;
   text-align: right;
+  //fixed
+  position: fixed;
+  min-width: 100%;
 }
+
+
 .HomeBookMark{
   border: none;
   font-size: 15px;
@@ -185,7 +190,6 @@ body{
 }
 
 .banner {
-  background-color: red;
   width: 100vw;
   height: 75vh;
 }

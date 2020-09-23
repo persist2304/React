@@ -1,0 +1,36 @@
+.center {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 8%;
+}
+.font{
+  font-size: 24px;
+}
+.padding {
+  font-size: 24px;
+  width: 100%;
+  padding: 6px 2vw;
+  border-color: #C8C8C8;
+}
+.margin {
+  margin-top: 3%;
+}
+.centerBtn {
+  text-align: center;
+  background-color: red;
+}
+.btn{
+  width: 100%;
+  padding: 2%;
+  font-size: 20px;
+  background-color: rgb(0, 111, 255);
+  color: white;
+}
+.disableBtn {
+  width: 100%;
+  padding: 2%;
+  font-size: 20px;
+  background-color: rgb(0, 111, 255);
+  color: white;
+  background-color: red;
+}
