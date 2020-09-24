@@ -3,11 +3,11 @@ import { useHistory } from "react-router-dom"
 import styles from "../../style/Login.scss"
 
 const InputForm = (props) => {
-    const { type, title, inputValue, setInputValue, inputRef } = props
+    const { id, type, title, value, inputRef, onChange, placeholder } = props
     return (
         <div>
             <div className={ styles.font }> { title } </div>
-            <input type={ type } className={ styles.padding } onChange={(e) => { setInputValue(e.target.value) }} value={ inputValue } ref={ inputRef }/>
+            <input id={ id } type={ type } className={ styles.padding } onChange={ onChange } value={ value } ref={ inputRef }/>
         </div>
     )
 }
@@ -22,11 +22,10 @@ const InputBtn = (props) => {
 }
 
 const Login = (props) => {
-    const [inputValue, setInputValue] = useState("");
-    const [inputPasswordValue, setInputPasswordValue] = useState("");
+    const [state, setState] = useState({ email: "", password: "" })
     const isDisabledBtn = () => {
         return (
-            inputValue.length == 0 || inputPasswordValue.length == 0 ? true : false
+            state.email.length == 0 || state.password.length == 0 ? true : false
         )
     }
 
@@ -40,19 +39,23 @@ const Login = (props) => {
         console.log('click');
     }
 
-
     let history = useHistory()
 
-    const toRegisterBtn = () => {
-        event.preventDefault();
+    const toRegisterBtn = (e) => {
+        e.preventDefault();
         history.push("/register")
+    }
+
+    const handleChange = (e) => {
+        const { id, value } = e.target
+        setState(preState => ({ ...preState, [id] : value }))
     }
 
     return (
         <div className={ styles.center }>
-            <InputForm type="text" title="Account" inputValue={ inputValue } setInputValue={ setInputValue } inputRef={ inputRef }/>
+            <InputForm id="email" type="text" title="Email" value={ state.email } inputRef={ inputRef } onChange={ handleChange }/>
             <div className={ styles.margin }>
-                <InputForm type="password" title="Password" inputValue={ inputPasswordValue } setInputValue={ setInputPasswordValue }/>
+                <InputForm id="password" type="password" title="Password" value={ state.password } onChange={ handleChange }/>
             </div>
             <div className={ styles.margin } >
                 <InputBtn name="Login" disabled={ isDisabledBtn() } onClick={ clickBtn } />
@@ -65,4 +68,4 @@ const Login = (props) => {
     )
 }
 
-export default Login;
+export { InputForm, Login, InputBtn };

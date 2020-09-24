@@ -1,3 +1,3 @@
-import Login from "./Login.jsx"
+import { Login, InputForm, InputBtn } from "./Login.jsx"
 
-export default Login ;
+export { Login, InputForm, InputBtn } ;
