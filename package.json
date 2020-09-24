@@ -6,7 +6,6 @@
   "scripts": {
     "start": "webpack-dev-server",
     "build-css": "node-sass src/index.scss dist/style/index.css"
-
   },
   "repository": {
     "type": "git",
@@ -19,6 +18,7 @@
   },
   "homepage": "https://github.com/persist2304/ReactToDoList#readme",
   "dependencies": {
+    "axios": "^0.20.0",
     "jsx-loader": "^0.13.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
