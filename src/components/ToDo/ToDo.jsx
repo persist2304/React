@@ -7,6 +7,7 @@ import { Home } from "../Home"
 import { Login } from "../Login"
 import Register from "../Register"
 import styles from "../../index.scss"
+import Alert from "../Alert"
 
 const ToDo = () => {
     const [errorMessage, updateErrorMessage] = useState(null)
@@ -23,7 +24,7 @@ const ToDo = () => {
             <Route exact path="/register" component={ Register }>
                 <Register showError={ updateErrorMessage }/>
             </Route>
-
+            <Alert errorMessage={ errorMessage } hideError={ updateErrorMessage }/>
         </div>
     )
 }
