@@ -2,8 +2,8 @@ import React,{ useState } from "react"
 import { InputForm, InputBtn } from "../Login"
 import styles from "../../style/Login.scss"
 import axios from 'axios';
-import {API_BASE_URL, ACCESS_TOKEN_NAME} from '../../constants/apiContants';
-
+import { API_BASE_URL, ACCESS_TOKEN_NAME } from '../../constants/apiConstants'
+import { useHistory } from "react-router-dom"
 
 const Register = (props) => {
     //建立初始值
@@ -17,7 +17,7 @@ const Register = (props) => {
 
     //驗證密碼是否一樣，一樣則呼叫 sendDetailToServer，錯誤則顯示錯誤訊息。
     const handleSubmitClick = (e) => {
-        console.log("handleSubmitClick", state)
+        console.log("handleSubmitClick")
         e.preventDefault()
         const { showError } = props
         if(state.password === state.confirmPassword) {
@@ -37,12 +37,17 @@ const Register = (props) => {
             //將目前的值存在 payload 內。
             const payload = { "email" : state.email, "password" : state.password }
             //傳值到後台
-            axios.post(API_BASE_URL+'user/register', payload)
+            axios.post(API_BASE_URL+'/adduser', payload)
                 //等待後台回應
                 .then(function(response){
+                    let getNewCount = response.data.data.length-1
+                    console.log('getNewCount', getNewCount)
+                    console.log('resValue', response.data.data[getNewCount]._id);
+
                     //如果回應是 200，則去把值更改，並呼叫 redirectToHome，不顯示錯誤
-                    if(response.state === 200){
-                        setState(prevState => ({ ...prevState, "successMessage" : "Registration successful. Redirecting to home page..'"}))
+                    if(response.status === 200){
+                        // setState(prevState => ({ ...prevState, "successMessage" : "Registration successful. Redirecting to home page..'"}))
+                        localStorage.setItem(ACCESS_TOKEN_NAME, response.data.data[getNewCount]._id)
                         redirectToHome();
                         showError(null)
                     } else {
@@ -56,6 +61,12 @@ const Register = (props) => {
         } else {
             showError("Please enter valid username and password")
         }
+    }
+
+    let history = useHistory()
+
+    const redirectToHome = () => {
+        history.push("/login")
     }
 
     return (

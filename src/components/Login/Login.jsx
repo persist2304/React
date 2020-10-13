@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
+import { API_BASE_URL } from "../../constants/apiConstants"
 import styles from "../../style/Login.scss"
+import axios from 'axios';
 
 const InputForm = (props) => {
     const { id, type, title, value, inputRef, onChange, placeholder } = props
@@ -34,9 +36,26 @@ const Login = (props) => {
         inputRef.current.focus();
     },[])
 
-    const clickBtn = () => {
-        event.preventDefault();
-        console.log('click');
+    const handleSubmitClick = (e) => {
+        e.preventDefault();
+        console.log('handleSubmitClick');
+        const payload = { "email" : state.email, "password" : state.password }
+        axios.post("localhost:4000/user/login", payload)
+            .then(function(response){
+                if(response.status === 200){
+                    setState(prevState => ({ ...prevState, "successMessage" : "Login successful.Redirecting to home page..."}))
+                    localStorage.setItem(ACCESS_TOKEN_NAME, response.data.token);
+                    redirectToHome();
+                    showError(null)
+                } else if (response.code == 204) {
+                    showError("Username and password do not match");
+                } else {
+                    showError("Username does not exists");
+                }
+            })
+            .catch(function(error){
+                console.log(error)
+            })
     }
 
     let history = useHistory()
@@ -58,12 +77,11 @@ const Login = (props) => {
                 <InputForm id="password" type="password" title="Password" value={ state.password } onChange={ handleChange }/>
             </div>
             <div className={ styles.margin } >
-                <InputBtn name="Login" disabled={ isDisabledBtn() } onClick={ clickBtn } />
+                <InputBtn name="Login" disabled={ isDisabledBtn() } onClick={ handleSubmitClick } />
             </div>
             <div className={ styles.margin } >
                 <InputBtn name="Register Page" onClick={ toRegisterBtn } />
             </div>
-
         </div>
     )
 }

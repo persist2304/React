@@ -10,7 +10,7 @@ import styles from "../../index.scss"
 import Alert from "../Alert"
 
 const ToDo = () => {
-    const [errorMessage, updateErrorMessage] = useState(null)
+    const [errorMessage, updateErrorMessage] = useState(null);
 
     return (
         <div>
