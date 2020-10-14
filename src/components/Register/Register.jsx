@@ -1,9 +1,9 @@
 import React,{ useState } from "react"
 import { InputForm, InputBtn } from "../Login"
-import styles from "../../style/Login.scss"
-import axios from 'axios';
 import { API_BASE_URL, ACCESS_TOKEN_NAME } from '../../constants/apiConstants'
 import { useHistory } from "react-router-dom"
+import styles from "../../style/Login.scss"
+import axios from 'axios';
 
 const Register = (props) => {
     //建立初始值
@@ -44,11 +44,11 @@ const Register = (props) => {
                     console.log('getNewCount', getNewCount)
                     console.log('resValue', response.data.data[getNewCount]._id);
 
-                    //如果回應是 200，則去把值更改，並呼叫 redirectToHome，不顯示錯誤
+                    //如果回應是 200，則去把值更改，並呼叫 redirectToDashBoard，不顯示錯誤
                     if(response.status === 200){
                         // setState(prevState => ({ ...prevState, "successMessage" : "Registration successful. Redirecting to home page..'"}))
                         localStorage.setItem(ACCESS_TOKEN_NAME, response.data.data[getNewCount]._id)
-                        redirectToHome();
+                        redirectToDashBoard();
                         showError(null)
                     } else {
                         showError("Some error ocurred")
@@ -65,8 +65,8 @@ const Register = (props) => {
 
     let history = useHistory()
 
-    const redirectToHome = () => {
-        history.push("/login")
+    const redirectToDashBoard = () => {
+        history.push("/dashboard")
     }
 
     return (

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { Route } from "react-router-dom"
+import { Route, Switch } from "react-router-dom"
 import { MyTasks } from '../MyTasks'
 import { InProgress } from "../InProgress"
 import { Completed } from "../Completed"
@@ -8,6 +8,8 @@ import { Login } from "../Login"
 import Register from "../Register"
 import styles from "../../index.scss"
 import Alert from "../Alert"
+import PrivateRoute from "../../utils/PrivateRoute.jsx"
+import DashBoard from "../DashBoard"
 
 const ToDo = () => {
     const [errorMessage, updateErrorMessage] = useState(null);
@@ -25,6 +27,18 @@ const ToDo = () => {
                 <Register showError={ updateErrorMessage }/>
             </Route>
             <Alert errorMessage={ errorMessage } hideError={ updateErrorMessage }/>
+
+            {/*Allow User In Private Route*/}
+
+            <PrivateRoute exact path="/dashboard" component={ DashBoard }/>
+
+
+            {/*<Switch>*/}
+                {/*<PrivateRoute exact path="/dashboard" component={ DashBoard }/>*/}
+                {/*<PrivateRoute path="/dashboard" component={ DashBoard } exact>*/}
+
+                {/*</PrivateRoute>*/}
+            {/*</Switch>*/}
         </div>
     )
 }
