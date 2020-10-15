@@ -4,7 +4,20 @@ export const todoData = [
 ]
 
 export const ArticleData = [
-    {id:1,title: "Barcelona", content: "Good morning/afternoon/evening, my name is …… . It is really a great honor to have this opportunity/chance to introduce myself. I would like to answer whatever you may raise, and I hope I can make a good performance today",lists: ["Good", "Sad"]},
+    {id:1,title: "Barcelona", content: "I haven’t done anything like that before ",lists: ["Good", "Sad"]},
     {id:2,title: "Paris", content: "I haven’t done anything like that before"},
-    {id:3,title: "Wasgington", content: "I think I’m quite fit for assistant’s job"}
+    {id:3,title: "Wasgington", content: "I think I’m quite fit for assistant’s job"},
 ]
+
+export const StepData = [
+    { title: "找專家三步驟，輕鬆獲取免費報價" },
+    { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/0171e36c-1193-4792-8891-2227fdb3e017/icon1.png", title: "1.提出需求", content: "為您篩選合適的專家"},
+    { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/38028014-e168-49b9-bdb6-23fc2737609a/icon2.png", title: "2.免費比價", content: "多位專家為您即時報價"},
+    { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/fc20c29a-038c-4b26-8911-3484a652f623/icon3.png", title: "3.找到服務", content: "挑選想要的專業服務"},
+]
+
+// export const StepData = [
+//     { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/0171e36c-1193-4792-8891-2227fdb3e017/icon1.png", title: "1.提出需求", content: "為您篩選合適的專家"},
+//     { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/38028014-e168-49b9-bdb6-23fc2737609a/icon2.png", title: "2.免費比價", content: "多位專家為您即時報價"},
+//     { img: "https://assets-au-01.kc-usercontent.com:443/e0a5d496-0e0b-02ac-957e-28068fa4bd4d/fc20c29a-038c-4b26-8911-3484a652f623/icon3.png", title: "3.找到服務", content: "挑選想要的專業服務"},
+// ]

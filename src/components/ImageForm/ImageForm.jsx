@@ -1,4 +1,5 @@
 import React from "react"
+import Article from "../Article"
 import styles from "../../style/ImageForm.scss"
 
 const ImageData = [
@@ -9,6 +10,7 @@ const Image = (props) => {
     return (
         <div>
             <img src={ props.img } alt="Img" className={ styles.img }/>
+            <Article/>
         </div>
     )
 }

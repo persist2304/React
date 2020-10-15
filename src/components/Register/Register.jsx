@@ -1,6 +1,6 @@
 import React,{ useState } from "react"
 import { InputForm, InputBtn } from "../Login"
-import { API_BASE_URL, ACCESS_TOKEN_NAME } from '../../constants/apiConstants'
+import { apiUserRegister, ACCESS_TOKEN_NAME } from '../../constants/apiConstants'
 import { useHistory } from "react-router-dom"
 import styles from "../../style/Login.scss"
 import axios from 'axios';
@@ -37,7 +37,8 @@ const Register = (props) => {
             //將目前的值存在 payload 內。
             const payload = { "email" : state.email, "password" : state.password }
             //傳值到後台
-            axios.post(API_BASE_URL+'/adduser', payload)
+            apiUserRegister(payload)
+            // axios.post(API_BASE_URL+'/adduser', payload)
                 //等待後台回應
                 .then(function(response){
                     let getNewCount = response.data.data.length-1

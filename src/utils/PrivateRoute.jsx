@@ -6,7 +6,7 @@ import { API_BASE_URL, ACCESS_TOKEN_NAME } from '../constants/apiConstants';
 const PrivateRoute = ({ component: Component, ...rest }) => {
 
     let isToken = localStorage.getItem(ACCESS_TOKEN_NAME);
-    console.log(isToken);
+    // console.log(isToken);
 
 
 
@@ -20,7 +20,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
     //     loggedIn = true;
     // }
 
-    console.log("NOWLOGIN??", loggedIn)
+    // console.log("NOWLOGIN??", loggedIn)
 
     // if(!isToken){
     //     loggedIn = false
@@ -30,7 +30,7 @@ const PrivateRoute = ({ component: Component, ...rest }) => {
 
 
     useEffect(() => {
-        console.log('run')
+        // console.log('run')
         if(isToken){
             loggedIn = true;
         }

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 import { useHistory } from "react-router-dom"
-import { API_BASE_URL } from "../../constants/apiConstants"
 import styles from "../../style/Login.scss"
 import axios from 'axios';
 
