@@ -8,6 +8,7 @@ import { Login } from "../Login"
 import Register from "../Register"
 import styles from "../../index.scss"
 import Alert from "../Alert"
+import CssWorld from "../CssWorld";
 import PrivateRoute from "../../utils/PrivateRoute.jsx"
 import DashBoard from "../DashBoard"
 
@@ -23,6 +24,8 @@ const ToDo = () => {
                 <Route exact path="/completed" component={Completed} />
             </div>
             <Route exact path="/login" component={ Login }/>
+            <Route exact path="/cssWorld" component={ CssWorld } />
+
             <Route exact path="/register" component={ Register }>
                 <Register showError={ updateErrorMessage }/>
             </Route>

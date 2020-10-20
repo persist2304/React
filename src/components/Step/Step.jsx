@@ -1,4 +1,4 @@
-import React from "react"
+import React,{ useState, useEffect } from "react"
 import styles from "../../index.scss"
 import { useSelector } from "react-redux";
 
@@ -16,6 +16,9 @@ const ContentStep = (props) => {
         </div>
     )
 }
+
+
+
 
 const Step = () => {
     const data = useSelector(state => state.StepReducer);
