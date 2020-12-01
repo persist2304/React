@@ -8,6 +8,8 @@ class ConnectInputTask extends React.Component {
     constructor(props){
         super(props)
 
+        console.log('!!!!', this.props.listData)
+
         if (this.props.listData){
             this.state = this.props.listData}
         else{

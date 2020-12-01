@@ -1,0 +1,68 @@
+.container {
+  width: 900px;
+  margin: auto;
+  padding: 20px 0;
+}
+section {
+  border: 1px solid #ccc;
+  margin-bottom: 1em;
+}
+.mainTitle {
+    background-color: rgb(49, 164, 216);
+    padding: 20px;
+    height: 70px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.subTitle {
+  background-color: rgb(254, 247, 218);
+  padding: 20px;
+  height: 90px;
+}
+.wrap {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+}
+.wrap .item {
+  width: 300px;
+  height: 240px;
+  border: 1px solid #ccc;
+  margin: 15px 28px;
+  padding: 33px 10px;
+}
+.wrap .item p {
+  margin-top: 10px;
+}
+.tabBlock {
+  max-width: 900px;
+  border: 1px solid #ccc;
+}
+.tabBlock .tab {
+  display: flex;
+}
+.tabBlock .tab div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: calc(100% / 3);
+  height: 57px;
+  color: #2E9ED7;
+  font-size: 20px;
+  cursor: pointer;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.tabBlock .tab div:first-child {
+  border-left: none;
+}
+
+.tabBlock .tab .active {
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border-bottom: none;
+}

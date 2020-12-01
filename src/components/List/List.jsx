@@ -44,6 +44,10 @@ class ConnectList extends React.Component{
     }
 
     _openEdit(){
+        console.log('111',this.props.listData)
+        console.log('222',this.props.editToDoList)
+
+
         if(event.target.className.indexOf('fa-star') === -1 && event.target.className.indexOf("taskChk") === -1) {
             this._list.current.style.display = "none"
             this.setState({

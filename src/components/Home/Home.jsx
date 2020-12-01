@@ -1,7 +1,6 @@
 import React from "react"
 import ImageForm from "../ImageForm"
 import Step from "../Step"
-import CssWorld from "../CssWorld";
 import styles from "../../index.scss"
 
 class Home extends React.Component {
@@ -12,7 +11,6 @@ class Home extends React.Component {
                     <div className={styles.main}>
                         <Step/>
                         <ImageForm/>
-                        <CssWorld/>
                     </div>
             </div>
         )

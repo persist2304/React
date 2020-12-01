@@ -6,6 +6,9 @@ class NavBar extends React.Component{
     render(){
         return (
             <div id={styles.NavBar}>
+                <BookMark to="/ToolsPractice"
+                          name="ToolsPractice"
+                          className={styles.HomeBookMark}/>
                 <BookMark to="/ToDoList"
                           name="ToDoList"
                           className={styles.HomeBookMark}/>
