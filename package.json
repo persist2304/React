@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/persist2304/ReactToDoList#readme",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "jsx-loader": "^0.13.2",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
