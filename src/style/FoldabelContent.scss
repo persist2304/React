@@ -1,0 +1,12 @@
+.contentContainer {
+  position: relative;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: linear-gradient(hsla(0, 0%, 100%, 0%) 80%, white)
+}
